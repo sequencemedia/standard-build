@@ -1,6 +1,7 @@
 import path from 'path'
 import gulp from 'gulp'
-import sass from 'gulp-sass'
+import dartSass from 'dart-sass'
+import gulpSass from 'gulp-sass'
 import debug from 'gulp-debug'
 import rename from 'gulp-rename'
 import postCss from 'gulp-postcss'
@@ -24,13 +25,15 @@ import {
 
 import handleError from './handle-error'
 
+const sass = gulpSass(dartSass)
+
 const PACKAGE = getPackage()
 const VERSION = getPackageVersion(PACKAGE)
 
 function getTransformForSass () {
   return (
     sass({
-      outputStyle: 'nested'
+      outputStyle: 'compressed' // 'nested'
     }).on('error', sass.logError)
   )
 }
