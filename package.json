@@ -78,7 +78,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "chai": "^4.3.4",
     "concurrently": "^6.2.1",
-    "core-js": "^3.17.3",
+    "core-js": "^3.18.0",
     "dart-sass": "^1.25.0",
     "eslint": "^7.32.0",
     "eslint-import-resolver-babel-module": "^5.3.1",
