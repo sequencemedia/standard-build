@@ -74,7 +74,7 @@
     "@babel/plugin-transform-runtime": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/register": "^7.15.3",
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
     "babel-plugin-minify-dead-code-elimination": "^0.5.1",
     "babel-plugin-module-resolver": "^4.1.0",
