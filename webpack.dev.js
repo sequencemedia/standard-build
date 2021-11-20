@@ -9,7 +9,6 @@ const common = require('./webpack.common')
 module.exports = (env) => (
   merge(common(env), {
     mode: 'development',
-    devtool: false,
     optimization: {
       minimizer: [
         new TerserPlugin({
