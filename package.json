@@ -50,7 +50,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "module-alias": "^2.2.2",
-    "postcss": "^8.4.1",
+    "postcss": "^8.4.3",
     "postcss-normalize": "^10.0.1",
     "postcss-scss": "^4.0.2",
     "sass": "^1.43.5",
