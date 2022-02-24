@@ -54,7 +54,7 @@
     "postcss-normalize": "^10.0.1",
     "postcss-scss": "^4.0.3",
     "sass": "^1.49.8",
-    "stylelint": "^14.5.2",
+    "stylelint": "^14.5.3",
     "stylelint-config-recommended-scss": "^5.0.2",
     "stylelint-scss": "^4.1.0",
     "terser-webpack-plugin": "^5.3.1",
