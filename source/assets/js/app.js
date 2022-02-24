@@ -1,5 +1,5 @@
 import debug from 'debug'
 
-const log = debug('@sequencemedia')
+const log = debug('@sequencemedia/standard-build')
 
-log('`@sequencemedia` is awake')
+log('`@sequencemedia/standard-build` is awake')
