@@ -37,7 +37,7 @@
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.17",
+    "cssnano": "^5.1.0",
     "debug": "^4.3.3",
     "dotenv": "^16.0.0",
     "glob-all": "^3.2.1",
