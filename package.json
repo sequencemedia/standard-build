@@ -52,7 +52,7 @@
     "module-alias": "^2.2.2",
     "postcss": "^8.4.12",
     "postcss-normalize": "^10.0.1",
-    "postcss-scss": "^4.0.3",
+    "postcss-scss": "^4.0.4",
     "sass": "^1.50.1",
     "stylelint": "^14.7.1",
     "stylelint-config-recommended-scss": "^6.0.0",
