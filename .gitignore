@@ -121,3 +121,6 @@ cache/*.*
 
 # Git keep
 !.gitkeep
+
+# Deps
+.depsrc
