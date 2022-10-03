@@ -81,7 +81,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "chai": "^4.3.6",
     "concurrently": "^7.4.0",
-    "core-js": "^3.25.3",
+    "core-js": "^3.25.4",
     "eslint": "^8.24.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-import-resolver-babel-module": "^5.3.1",
