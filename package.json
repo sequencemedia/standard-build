@@ -79,7 +79,7 @@
     "babel-loader": "^9.1.0",
     "babel-plugin-minify-dead-code-elimination": "^0.5.2",
     "babel-plugin-module-resolver": "^4.1.0",
-    "chai": "^4.3.6",
+    "chai": "^4.3.7",
     "concurrently": "^7.5.0",
     "core-js": "^3.26.0",
     "eslint": "^8.27.0",
@@ -89,9 +89,9 @@
     "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "mocha": "^10.1.0",
-    "sinon": "^14.0.1",
+    "sinon": "^14.0.2",
     "sinon-chai": "^3.7.0"
   },
   "_moduleAliases": {
