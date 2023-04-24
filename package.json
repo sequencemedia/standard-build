@@ -30,7 +30,7 @@
     "lint:css": "stylelint source/assets/sass",
     "lint:css:fix": "npm run lint:css -- --fix",
     "test": "cross-env NODE_ENV=test mocha test --recursive -r @babel/register --verbose --color",
-    "gulp": "source nvm.sh && gulp --color ",
+    "gulp": "bash nvm.sh && gulp --color ",
     "nvm": "bash nvm.sh",
     "pre-commit": "npm run lint && npm run test && npm run build && git add public"
   },
