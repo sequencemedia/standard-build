@@ -31,7 +31,7 @@
     "lint:css": "stylelint source/assets/sass",
     "lint:css:fix": "npm run lint:css -- --fix",
     "test": "cross-env NODE_ENV=test mocha test --recursive --verbose --color",
-    "gulp": "npm run nvm && gulp --color ",
+    "gulp": "gulp --color ",
     "nvm": "bash nvm.sh",
     "prepare": "husky install"
   },
