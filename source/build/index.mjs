@@ -2,18 +2,18 @@ export {
   cleanFont,
   font,
   watchFont
-} from './font'
+} from './font.mjs'
 
 export {
   cleanImg,
   img,
   watchImg
-} from './img'
+} from './img.mjs'
 
 export {
   cleanCss,
   css,
   watchCss
-} from './css'
+} from './css.mjs'
 
-export handleError from './handle-error'
+export { default as handleError } from './handle-error.mjs'

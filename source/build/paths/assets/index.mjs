@@ -10,7 +10,7 @@ import {
   getSourcePath,
   hasPublicPath,
   getPublicPath
-} from '~/source/build/args/assets'
+} from '#source/build/args/assets'
 
 const log = debug('@sequencemedia:source:build:paths:assets')
 

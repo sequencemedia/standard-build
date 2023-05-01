@@ -6,7 +6,7 @@ import {
 
 import {
   currentDir
-} from './paths'
+} from '#source/build/paths'
 
 const log = debug('@sequencemedia:source:build:handle-error')
 

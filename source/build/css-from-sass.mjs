@@ -1,11 +1,10 @@
 import path from 'path'
-import gulp from 'gulp'
+import gulp from '@sequencemedia/gulp'
 import dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 import debug from 'gulp-debug'
 import rename from 'gulp-rename'
 import postCss from 'gulp-postcss'
-import normalize from 'postcss-normalize'
 import scss from 'postcss-scss'
 import autoprefixer from 'autoprefixer'
 import nano from 'cssnano'
@@ -16,14 +15,14 @@ import sourcemaps from 'gulp-sourcemaps'
 import {
   getPackage,
   getPackageVersion
-} from '~/source/build/args'
+} from '#source/build/args'
 
 import {
   sourcePath,
   publicPath
-} from './paths/assets'
+} from '#source/build/paths/assets'
 
-import handleError from './handle-error'
+import handleError from './handle-error.mjs'
 
 const sass = gulpSass(dartSass)
 
@@ -41,7 +40,6 @@ function getTransformForSass () {
 function getTransformForPostCss () {
   return (
     postCss([
-      normalize(),
       autoprefixer(),
       nano()
     ], { syntax: scss })

@@ -1,5 +1,5 @@
 import path from 'path'
-import gulp from 'gulp'
+import gulp from '@sequencemedia/gulp'
 import debug from 'gulp-debug'
 import vinylPaths from 'vinyl-paths'
 import del from 'del'
@@ -8,9 +8,9 @@ import {
   currentDir,
   sourcePath,
   publicPath
-} from './paths/assets'
+} from '#source/build/paths/assets'
 
-import handleError from './handle-error'
+import handleError from './handle-error.mjs'
 
 export function cleanImg () {
   return (

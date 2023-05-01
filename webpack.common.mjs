@@ -1,35 +1,30 @@
-require('module-alias/register')
-require('@babel/register')({
-  ignore: [
-    /node_modules/
-  ]
-})
+import path from 'node:path'
 
-const path = require('path')
-
-const {
+import {
   CleanWebpackPlugin
-} = require('clean-webpack-plugin')
+} from 'clean-webpack-plugin'
 
-const {
-  EnvironmentPlugin,
-  SourceMapDevToolPlugin
-} = require('webpack')
+import Webpack from 'webpack'
 
-const {
+import {
   sourcePath,
   publicPath
-} = require('~/source/build/paths/assets')
+} from '#source/build/paths/assets'
 
-const {
+import {
   getPackage,
   getPackageVersion
-} = require('~/source/build/args')
+} from '#source/build/args'
 
 const PACKAGE = getPackage()
 const VERSION = getPackageVersion(PACKAGE)
 
-module.exports = ({ NODE_ENV = 'production' } = process.env) => ({
+const {
+  EnvironmentPlugin,
+  SourceMapDevToolPlugin
+} = Webpack
+
+export default ({ NODE_ENV = 'production' } = process.env) => ({
   mode: NODE_ENV,
   entry: {
     app: path.resolve(sourcePath, 'js/app.js')

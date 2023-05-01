@@ -2,7 +2,7 @@ import 'dotenv/config'
 
 import debug from 'debug'
 
-import MAP from '~/source/build/args/map'
+import MAP from '#source/build/args/map'
 
 import {
   accessSync,
@@ -10,7 +10,7 @@ import {
   readFileSync
 } from 'fs'
 
-import PACKAGE from '~/package'
+const PACKAGE = JSON.parse(readFileSync('./package.json').toString())
 
 const {
   env: ENV
@@ -20,7 +20,7 @@ const log = debug('@sequencemedia:source:build:args')
 
 log('`source:build:args` is awake')
 
-export * as assets from './assets'
+export * as assets from '#source/build/args/assets'
 
 export const hasPackageArg = (m = MAP) => m.has('package')
 
@@ -32,7 +32,7 @@ export const getPackageEnv = (e = ENV) => Reflect.get(e, 'PACKAGE')
 
 export const hasPackage = (m = MAP, e = ENV) => hasPackageArg(m) ? accessSync(getPackageArg(m), constants.F_OK) : hasPackageEnv(e) ? accessSync(getPackageEnv(e), constants.F_OK) : true
 
-export const getPackage = (m = MAP, e = ENV) => hasPackageArg(m) ? JSON.parse(readFileSync(getPackageArg(m), 'utf8')) : hasPackageEnv(e) ? JSON.parse(readFileSync(getPackageEnv(e), 'utf8')) : PACKAGE
+export const getPackage = (m = MAP, e = ENV) => hasPackageArg(m) ? JSON.parse(readFileSync(getPackageArg(m), 'utf8').toString()) : hasPackageEnv(e) ? JSON.parse(readFileSync(getPackageEnv(e), 'utf8').toString()) : PACKAGE
 
 export const hasPackageName = (p = PACKAGE) => Reflect.has(p, 'name')
 

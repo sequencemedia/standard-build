@@ -1,9 +1,6 @@
-require('module-alias/register')
-require('@babel/register')
+import gulp from '@sequencemedia/gulp'
 
-const gulp = require('gulp')
-
-const {
+import {
   cleanFont,
   font,
   watchFont,
@@ -13,7 +10,7 @@ const {
   cleanCss,
   css,
   watchCss
-} = require('~/source/build')
+} from '#source/build'
 
 gulp
   .task('clean:font', cleanFont)

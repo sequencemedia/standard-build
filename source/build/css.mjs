@@ -1,7 +1,7 @@
 import debug from 'debug'
 
 import path from 'path'
-import gulp from 'gulp'
+import gulp from '@sequencemedia/gulp'
 import vinylPaths from 'vinyl-paths'
 import del from 'del'
 
@@ -9,11 +9,11 @@ import {
   currentDir,
   sourcePath,
   publicPath
-} from './paths/assets'
+} from '#source/build/paths/assets'
 
-import handleError from './handle-error'
+import handleError from './handle-error.mjs'
 
-import cssFromSass from './css-from-sass'
+import cssFromSass from './css-from-sass.mjs'
 
 const log = debug('@sequencemedia:source:build:css')
 

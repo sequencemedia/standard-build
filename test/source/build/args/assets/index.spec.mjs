@@ -21,11 +21,11 @@ import {
   getSourcePath,
   hasPublicPath,
   getPublicPath
-} from '~/source/build/args/assets'
+} from '#source/build/args/assets'
 
 chai.use(sinonChai)
 
-describe('~/source/build/args/assets', () => {
+describe('#source/build/args/assets', () => {
   describe('`hasSourcePathArg`', () => {
     it('is a function', () => {
       return expect(hasSourcePathArg)

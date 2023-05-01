@@ -2,7 +2,7 @@ import 'dotenv/config'
 
 import debug from 'debug'
 
-import MAP from '~/source/build/args/map'
+import MAP from '#source/build/args/map'
 
 const {
   env: ENV
