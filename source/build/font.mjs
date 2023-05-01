@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'node:path'
 import gulp from '@sequencemedia/gulp'
 import debug from 'gulp-debug'
 import vinylPaths from 'vinyl-paths'

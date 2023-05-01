@@ -3,7 +3,7 @@ import debug from 'debug'
 import {
   join,
   resolve
-} from 'path'
+} from 'node:path'
 
 import {
   hasSourcePath,

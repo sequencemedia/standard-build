@@ -8,7 +8,7 @@ import {
   accessSync,
   constants,
   readFileSync
-} from 'fs'
+} from 'node:fs'
 
 const PACKAGE = JSON.parse(readFileSync('./package.json').toString())
 

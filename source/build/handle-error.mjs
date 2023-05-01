@@ -2,7 +2,7 @@ import debug from 'debug'
 
 import {
   relative
-} from 'path'
+} from 'node:path'
 
 import {
   currentDir

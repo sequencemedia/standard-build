@@ -1,6 +1,6 @@
 import debug from 'debug'
 
-import path from 'path'
+import path from 'node:path'
 import gulp from '@sequencemedia/gulp'
 import vinylPaths from 'vinyl-paths'
 import del from 'del'
