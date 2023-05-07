@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/standard-build",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Standard Build",
   "private": true,
   "main": "./main.mjs",
