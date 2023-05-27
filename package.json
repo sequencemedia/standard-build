@@ -75,7 +75,7 @@
     "@babel/preset-env": "^7.22.2",
     "@babel/register": "^7.21.0",
     "@sequencemedia/gulp": "^1.0.23",
-    "@sequencemedia/hooks": "^1.0.424",
+    "@sequencemedia/hooks": "^1.0.425",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "babel-plugin-minify-dead-code-elimination": "^0.5.2",
