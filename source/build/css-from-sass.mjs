@@ -1,16 +1,16 @@
 import path from 'node:path'
 import gulp from '@sequencemedia/gulp'
 import dartSass from 'sass'
-import gulpSass from 'gulp-sass'
-import debug from 'gulp-debug'
-import rename from 'gulp-rename'
-import postCss from 'gulp-postcss'
+import gulpSass from '@sequencemedia/gulp-sass'
+import debug from '@sequencemedia/gulp-debug'
+import rename from '@sequencemedia/gulp-rename'
+import postCss from '@sequencemedia/gulp-postcss'
 import scss from 'postcss-scss'
 import autoprefixer from 'autoprefixer'
 import nano from 'cssnano'
-import cleanCss from 'gulp-clean-css'
-import cssPurge from 'gulp-css-purge'
-import sourcemaps from 'gulp-sourcemaps'
+import cleanCss from '@sequencemedia/gulp-clean-css'
+import cssPurge from '@sequencemedia/gulp-css-purge'
+import sourcemaps from '@sequencemedia/gulp-sourcemaps'
 
 import {
   getPackage,

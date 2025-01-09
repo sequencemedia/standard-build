@@ -3,8 +3,10 @@
   "plugins": [
     "stylelint-scss"
   ],
-  "ignoreFiles": ["**/*.css"],
   "rules": {
     "no-descending-specificity": null
-  }
+  },
+  "ignoreFiles": [
+    "**/*.css"
+  ]
 }
